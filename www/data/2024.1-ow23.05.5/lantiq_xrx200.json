@@ -1,0 +1,110 @@
+
+{
+    "default_devices_packages": [],
+    "excluded_devices": "",
+    "supported_devices": [
+        {
+            "configs": [],
+            "name": "avm_fritz3370-rev2-hynix",
+            "packages": [
+                "wifi-unstuck-wa"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "avm_fritz3370-rev2-micron",
+            "packages": [
+                "wifi-unstuck-wa"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "avm_fritz3390",
+            "packages": [
+                "wifi-unstuck-wa"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "avm_fritz7360-v2",
+            "packages": [
+                "wifi-unstuck-wa"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "avm_fritz7360sl",
+            "packages": [
+                "wifi-unstuck-wa"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "avm_fritz7362sl",
+            "packages": [
+                "wifi-unstuck-wa"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "avm_fritz7412",
+            "packages": [
+                "wifi-unstuck-wa"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "avm_fritz7430",
+            "packages": [
+                "wifi-unstuck-wa"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "bt_homehub-v5a",
+            "packages": [
+                "wifi-unstuck-wa",
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "lantiq_easy80920-nand",
+            "packages": [
+                "wifi-unstuck-wa"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "lantiq_easy80920-nor",
+            "packages": [
+                "wifi-unstuck-wa"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_tdw8970",
+            "packages": [
+                "wifi-unstuck-wa"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_tdw8980",
+            "packages": [
+                "wifi-unstuck-wa"
+            ]
+        }
+    ],
+    "version_packages": [
+        "-dnsmasq",
+        "-odhcpd-ipv6only",
+        "-ppp",
+        "-ppp-mod-pppoe"
+    ]
+}
+

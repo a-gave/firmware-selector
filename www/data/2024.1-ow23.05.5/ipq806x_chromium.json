@@ -1,0 +1,34 @@
+
+{
+    "default_devices_packages": [
+        "kmod-ath10k",
+        "-kmod-ath10k-ct",
+        "-kmod-ath10k-ct-smallbuffers"
+    ],
+    "excluded_devices": {},
+    "supported_devices": [
+        {
+            "configs": [],
+            "name": "asus_onhub",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_onhub",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        }
+    ],
+    "version_packages": [
+        "-dnsmasq",
+        "-odhcpd-ipv6only",
+        "-ppp",
+        "-ppp-mod-pppoe"
+    ]
+}
+

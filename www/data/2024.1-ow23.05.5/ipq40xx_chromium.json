@@ -1,0 +1,19 @@
+
+{
+    "default_devices_packages": [
+        "-ath10k-firmware-qca4019-ct",
+        "ath10k-firmware-qca4019",
+        "kmod-ath10k",
+        "-kmod-ath10k-ct",
+        "-kmod-ath10k-ct-smallbuffers"
+    ],
+    "excluded_devices": {},
+    "supported_devices": [],
+    "version_packages": [
+        "-dnsmasq",
+        "-odhcpd-ipv6only",
+        "-ppp",
+        "-ppp-mod-pppoe"
+    ]
+}
+

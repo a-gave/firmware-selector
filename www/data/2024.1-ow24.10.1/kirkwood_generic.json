@@ -1,0 +1,28 @@
+
+{
+    "default_devices_packages": [],
+    "excluded_devices": {},
+    "supported_devices": [
+        {
+            "configs": [],
+            "name": "checkpoint_l-50",
+            "packages": [
+                "wifi-unstuck-wa"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "endian_4i-edge-200",
+            "packages": [
+                "wifi-unstuck-wa"
+            ]
+        }
+    ],
+    "version_packages": [
+        "-dnsmasq",
+        "-odhcpd-ipv6only",
+        "-ppp",
+        "-ppp-mod-pppoe"
+    ]
+}
+

@@ -1,0 +1,34 @@
+{"flavors": {
+	"default": [
+            "babeld-auto-gw-mode",
+            "batctl-default",
+            "check-date-http",
+            "lime-app",
+            "lime-debug",
+            "lime-docs",
+            "lime-docs-minimal",
+            "lime-hwd-ground-routing",
+            "lime-hwd-openwrt-wan",
+            "lime-proto-anygw",
+            "lime-proto-babeld",
+            "lime-proto-batadv",
+            "shared-state",
+            "shared-state-babeld_hosts",
+            "shared-state-bat_hosts",
+            "shared-state-nodes_and_links"
+        ],
+        "mini": [
+            "babeld-auto-gw-mode",
+            "lime-docs-minimal",
+            "lime-hwd-openwrt-wan",
+            "lime-proto-anygw",
+            "lime-proto-babeld",
+            "lime-proto-batadv",
+            "shared-state",
+            "shared-state-async",
+            "shared-state-babeld_hosts",
+            "shared-state-bat_hosts",
+            "shared-state-nodes_and_links"
+        ]
+    }
+}

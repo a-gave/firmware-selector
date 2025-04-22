@@ -1,0 +1,13 @@
+
+{
+    "default_devices_packages": [],
+    "excluded_devices": "",
+    "supported_devices": [],
+    "version_packages": [
+        "-dnsmasq",
+        "-odhcpd-ipv6only",
+        "-ppp",
+        "-ppp-mod-pppoe"
+    ]
+}
+

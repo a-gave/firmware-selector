@@ -1,0 +1,47 @@
+
+{
+    "default_devices_packages": [
+        "-ath10k-firmware-qca4019-ct",
+        "ath10k-firmware-qca4019",
+        "kmod-ath10k",
+        "-kmod-ath10k-ct",
+        "-kmod-ath10k-ct-smallbuffers"
+    ],
+    "excluded_devices": {},
+    "supported_devices": [
+        {
+            "configs": [],
+            "name": "mikrotik_cap-ac",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "mikrotik_hap-ac2",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "mikrotik_wap-ac",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        }
+    ],
+    "version_packages": [
+        "-dnsmasq",
+        "-odhcpd-ipv6only",
+        "-ppp",
+        "-ppp-mod-pppoe"
+    ]
+}
+

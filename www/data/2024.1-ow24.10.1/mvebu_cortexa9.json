@@ -1,0 +1,56 @@
+
+{
+    "default_devices_packages": [],
+    "excluded_devices": {},
+    "supported_devices": [
+        {
+            "configs": [],
+            "name": "cznic_turris-omnia",
+            "packages": [
+                "wifi-unstuck-wa",
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "fortinet_fwf-50e-2r",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "fortinet_fwf-51e",
+            "packages": [
+                "wifi-unstuck-wa"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "iij_sa-w2",
+            "packages": [
+                "wifi-unstuck-wa",
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        }
+    ],
+    "version_packages": [
+        "-dnsmasq",
+        "-odhcpd-ipv6only",
+        "-ppp",
+        "-ppp-mod-pppoe"
+    ]
+}
+

@@ -1,0 +1,82 @@
+
+{
+    "default_devices_packages": [
+        "wifi-unstuck-wa"
+    ],
+    "excluded_devices": {},
+    "supported_devices": [
+        {
+            "configs": [],
+            "name": "mikrotik_routerboard-911g-5hpacd",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "mikrotik_routerboard-921gs-5hpacd-15s",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "mikrotik_routerboard-922uags-5hpacd",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "mikrotik_routerboard-952ui-5ac2nd",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9887-ct",
+                "ath10k-firmware-qca9887"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "mikrotik_routerboard-962uigs-5hact2hnt",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "mikrotik_routerboard-wap-g-5hact2hnd",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        }
+    ],
+    "version_packages": [
+        "-dnsmasq",
+        "-odhcpd-ipv6only",
+        "-ppp",
+        "-ppp-mod-pppoe"
+    ]
+}
+

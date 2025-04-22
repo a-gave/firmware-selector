@@ -1,0 +1,60 @@
+
+{
+    "default_devices_packages": [
+        "wifi-unstuck-wa"
+    ],
+    "excluded_devices": "",
+    "supported_devices": [
+        {
+            "configs": [],
+            "name": "dlink_dap-1720-a1",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x",
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "dlink_dir-859-a1",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x",
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "dlink_dir-859-a3",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x",
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "dlink_dir-869-a1",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x",
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        }
+    ],
+    "version_packages": [
+        "-dnsmasq",
+        "-odhcpd-ipv6only",
+        "-ppp",
+        "-ppp-mod-pppoe"
+    ]
+}
+

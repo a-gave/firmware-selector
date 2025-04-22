@@ -1,0 +1,214 @@
+
+{
+    "default_devices_packages": [
+        "-ath10k-firmware-qca4019-ct",
+        "ath10k-firmware-qca4019",
+        "kmod-ath10k",
+        "-kmod-ath10k-ct",
+        "-kmod-ath10k-ct-smallbuffers"
+    ],
+    "excluded_devices": {},
+    "supported_devices": [
+        {
+            "configs": [],
+            "name": "asus_map-ac2200",
+            "packages": [
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "asus_rt-ac42u",
+            "packages": [
+                "-ath10k-firmware-qca9984-ct",
+                "ath10k-firmware-qca9984"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "asus_rt-ac58u",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "avm_fritzrepeater-3000",
+            "packages": [
+                "-ath10k-firmware-qca9984-ct",
+                "ath10k-firmware-qca9984"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "buffalo_wtr-m2133hp",
+            "packages": [
+                "-ath10k-firmware-qca9984-ct",
+                "ath10k-firmware-qca9984"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "ezviz_cs-w3-wd1200g-eup",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "glinet_gl-b2200",
+            "packages": [
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "linksys_ea8300",
+            "packages": [
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "linksys_mr8300",
+            "packages": [
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "linksys_whw03",
+            "packages": [
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "linksys_whw03v2",
+            "packages": [
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "meraki_mr33",
+            "packages": [
+                "-ath10k-firmware-qca9887-ct",
+                "ath10k-firmware-qca9887"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "meraki_mr74",
+            "packages": [
+                "-ath10k-firmware-qca9887-ct",
+                "ath10k-firmware-qca9887"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "netgear_lbr20",
+            "packages": [
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "netgear_rbr40",
+            "packages": [
+                "-ath10k-firmware-qca9984-ct",
+                "ath10k-firmware-qca9984"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "netgear_rbr50",
+            "packages": [
+                "-ath10k-firmware-qca9984-ct",
+                "ath10k-firmware-qca9984"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "netgear_rbs40",
+            "packages": [
+                "-ath10k-firmware-qca9984-ct",
+                "ath10k-firmware-qca9984"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "netgear_rbs50",
+            "packages": [
+                "-ath10k-firmware-qca9984-ct",
+                "ath10k-firmware-qca9984"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "netgear_srr60",
+            "packages": [
+                "-ath10k-firmware-qca9984-ct",
+                "ath10k-firmware-qca9984"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "netgear_srs60",
+            "packages": [
+                "-ath10k-firmware-qca9984-ct",
+                "ath10k-firmware-qca9984"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "openmesh_a62",
+            "packages": [
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "plasmacloud_pa2200",
+            "packages": [
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "zte_mf18a",
+            "packages": [
+                "-ath10k-firmware-qca99x0-ct",
+                "ath10k-firmware-qca99x0"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "zte_mf289f",
+            "packages": [
+                "-ath10k-firmware-qca9984-ct",
+                "ath10k-firmware-qca9984"
+            ]
+        }
+    ],
+    "version_packages": [
+        "-dnsmasq",
+        "-odhcpd-ipv6only",
+        "-ppp",
+        "-ppp-mod-pppoe"
+    ]
+}
+

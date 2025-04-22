@@ -1,0 +1,15 @@
+
+{
+    "default_devices_packages": [
+        "wifi-unstuck-wa"
+    ],
+    "excluded_devices": {},
+    "supported_devices": [],
+    "version_packages": [
+        "-dnsmasq",
+        "-odhcpd-ipv6only",
+        "-ppp",
+        "-ppp-mod-pppoe"
+    ]
+}
+

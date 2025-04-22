@@ -1,0 +1,194 @@
+
+{
+    "default_devices_packages": [
+        "wifi-unstuck-wa"
+    ],
+    "excluded_devices": {},
+    "supported_devices": [
+        {
+            "configs": [],
+            "name": "domywifi_dw33d",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "dongwon_dw02-412h-128m",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "dongwon_dw02-412h-64m",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "glinet_gl-ar750s-nor",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9887-ct",
+                "ath10k-firmware-qca9887"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "glinet_gl-ar750s-nor-nand",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9887-ct",
+                "ath10k-firmware-qca9887"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "glinet_gl-e750",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9887-ct",
+                "ath10k-firmware-qca9887"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "glinet_gl-x1200-nor",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "glinet_gl-x1200-nor-nand",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "netgear_r6100",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "zte_mf281",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "zte_mf282",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "zte_mf286",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "zte_mf286a",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "zte_mf286r",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "zyxel_emg2926_q10a",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "zyxel_nbg6716",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        }
+    ],
+    "version_packages": [
+        "-dnsmasq",
+        "-odhcpd-ipv6only",
+        "-ppp",
+        "-ppp-mod-pppoe"
+    ]
+}
+

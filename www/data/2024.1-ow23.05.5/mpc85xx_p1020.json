@@ -1,0 +1,27 @@
+
+{
+    "default_devices_packages": [
+        "wifi-unstuck-wa"
+    ],
+    "excluded_devices": {},
+    "supported_devices": [
+        {
+            "configs": [],
+            "name": "extreme-networks_ws-ap3825i",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        }
+    ],
+    "version_packages": [
+        "-dnsmasq",
+        "-odhcpd-ipv6only",
+        "-ppp",
+        "-ppp-mod-pppoe"
+    ]
+}
+

@@ -1,0 +1,36 @@
+
+{
+    "default_devices_packages": [],
+    "excluded_devices": {},
+    "supported_devices": [
+        {
+            "configs": [],
+            "name": "xiaomi_ax3600",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9887-ct",
+                "ath10k-firmware-qca9887"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "xiaomi_ax9000",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9887-ct",
+                "ath10k-firmware-qca9887"
+            ]
+        }
+    ],
+    "version_packages": [
+        "-dnsmasq",
+        "-odhcpd-ipv6only",
+        "-ppp",
+        "-ppp-mod-pppoe"
+    ]
+}
+

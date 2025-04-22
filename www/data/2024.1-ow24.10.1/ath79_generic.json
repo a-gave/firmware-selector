@@ -1,0 +1,1782 @@
+
+{
+    "default_devices_packages": [
+        "wifi-unstuck-wa"
+    ],
+    "excluded_devices": [
+        {
+            "devices": [
+                "dlink_dap-1330-a1",
+                "dlink_dap-1365-a1",
+                "dlink_dch-g020-a1",
+                "belkin_f9j1108-v2",
+                "belkin_f9k1115-v2"
+            ],
+            "type": "non_default_version_dist"
+        }
+    ],
+    "supported_devices": [
+        {
+            "configs": [],
+            "name": "airtight_c-75",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x",
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "allnet_all-wap02860ac",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x",
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "araknis_an-500-ap-i-ac",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x",
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "araknis_an-700-ap-i-ac",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x",
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "asus_pl-ac56",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "asus_rp-ac51",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "asus_rp-ac66",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "asus_rt-ac59u",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "asus_rt-ac59u-v2",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "asus_zenwifi-cd6n",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "asus_zenwifi-cd6r",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "avm_fritz1750e",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "avm_fritzdvbc",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "belkin_f9j1108-v2",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "belkin_f9k1115-v2",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "comfast_cf-e313ac",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "comfast_cf-e375ac",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "comfast_cf-e380ac-v2",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "comfast_cf-e560ac",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "comfast_cf-ew72",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "comfast_cf-wr650ac-v1",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "comfast_cf-wr650ac-v2",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "comfast_cf-wr752ac-v1",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "dell_apl26-0ae",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x",
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "devolo_dlan-pro-1200plus-ac",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "devolo_dvl1200e",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "devolo_dvl1200i",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "devolo_dvl1750c",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "devolo_dvl1750e",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "devolo_dvl1750i",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "devolo_dvl1750x",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "devolo_magic-2-wifi",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "dlink_covr-c1200-a1",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "dlink_covr-p2500-a1",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "dlink_dap-2660-a1",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x",
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "dlink_dap-2680-a1",
+            "packages": [
+                "-ath10k-firmware-qca9984-ct",
+                "ath10k-firmware-qca9984",
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "dlink_dap-2695-a1",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x",
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "dlink_dap-3662-a1",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x",
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "dlink_dir-842-c1",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "dlink_dir-842-c2",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "dlink_dir-842-c3",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "elecom_wab-i1750-ps",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "elecom_wab-s1167-ps",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "elecom_wab-s600-ps",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "elecom_wrc-1750ghbk2-i",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "engenius_eap1200h",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x",
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "engenius_eap1750h",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x",
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "engenius_ecb1200",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x",
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "engenius_ecb1750",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x",
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "engenius_ens1750",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x",
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "engenius_enstationac-v1",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x",
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "engenius_epg5000",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x",
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "engenius_esr1200",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x",
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "engenius_esr1750",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x",
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "engenius_ews511ap",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9887-ct",
+                "ath10k-firmware-qca9887"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "engenius_ews660ap",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x",
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "extreme-networks_ws-ap3805i",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x",
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "glinet_gl-ar750",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9887-ct",
+                "ath10k-firmware-qca9887"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "glinet_gl-x750",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9887-ct",
+                "ath10k-firmware-qca9887"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "hak5_lan-turtle",
+            "packages": [
+                "-wifi-unstuck-wa"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "hak5_packet-squirrel",
+            "packages": [
+                "-wifi-unstuck-wa"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "huawei_ap5030dn",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x",
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "iodata_etg3-r",
+            "packages": [
+                "-wifi-unstuck-wa"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "iodata_wn-ac1167dgr",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "iodata_wn-ac1600dgr",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "iodata_wn-ac1600dgr2",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "jjplus_ja76pf2",
+            "packages": [
+                "-wifi-unstuck-wa"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "joyit_jt-or750i",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9887-ct",
+                "ath10k-firmware-qca9887"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "nec_wf1200cr",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "nec_wg1200cr",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "nec_wg800hp",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9887-ct",
+                "ath10k-firmware-qca9887"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "netgear_ex7300",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca99x0-ct",
+                "ath10k-firmware-qca99x0"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "netgear_ex7300-v2",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9984-ct",
+                "ath10k-firmware-qca9984"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "ocedo_koala",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "ocedo_ursus",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "openmesh_a40",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "openmesh_a60",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "openmesh_mr1750-v1",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "openmesh_mr1750-v2",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "openmesh_om5p-ac-v1",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "openmesh_om5p-ac-v2",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "phicomm_k2t",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "qihoo_c301",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "qxwlan_e1700ac-v2-16m",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "qxwlan_e1700ac-v2-8m",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "qxwlan_e600gac-v2-16m",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9887-ct",
+                "ath10k-firmware-qca9887"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "qxwlan_e600gac-v2-8m",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9887-ct",
+                "ath10k-firmware-qca9887"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "sitecom_wlr-7100",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x",
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "sitecom_wlr-8100",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x",
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "sophos_ap100",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "sophos_ap100c",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "sophos_ap55",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "sophos_ap55c",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "teltonika_rut300",
+            "packages": [
+                "-wifi-unstuck-wa"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_archer-a7-v5",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_archer-a9-v6",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9984-ct",
+                "ath10k-firmware-qca9984"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_archer-c2-v3",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9887-ct",
+                "ath10k-firmware-qca9887"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_archer-c25-v1",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9887-ct",
+                "ath10k-firmware-qca9887"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_archer-c5-v1",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_archer-c58-v1",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_archer-c59-v1",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_archer-c59-v2",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_archer-c6-v2",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_archer-c6-v2-us",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_archer-c60-v1",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_archer-c60-v2",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_archer-c60-v3",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_archer-c7-v2",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_archer-c7-v4",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_archer-c7-v5",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_archer-d50-v1",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_archer-d7-v1",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_archer-d7b-v1",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_cpe710-v1",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_deco-m4r-v1",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_deco-s4-v2",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_eap225-outdoor-v1",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_eap225-outdoor-v3",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_eap225-v1",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_eap225-v3",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_eap225-v4",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_eap225-wall-v2",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_eap245-v1",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_eap245-v3",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca99x0-ct",
+                "ath10k-firmware-qca99x0"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_re350k-v1",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_re450-v3",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_re455-v1",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_tl-wa1201-v2",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_tl-wdr6500-v2",
+            "packages": [
+                "wifi-unstuck-wa",
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_tl-wdr7500-v3",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_tl-wpa8630-v1",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_tl-wr902ac-v1",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9887-ct",
+                "ath10k-firmware-qca9887"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "trendnet_tew-823dru",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "ubnt_aircube-ac",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "ubnt_amplifi-router-hd",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "ubnt_bullet-ac",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "ubnt_lap-120",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "ubnt_litebeam-ac-gen2",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "ubnt_nanobeam-ac",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "ubnt_nanobeam-ac-gen2",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "ubnt_nanobeam-ac-xc",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "ubnt_nanostation-ac",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "ubnt_nanostation-ac-loco",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "ubnt_powerbeam-5ac-500",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "ubnt_powerbeam-5ac-gen2",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "ubnt_rocket-5ac-lite",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "ubnt_routerstation",
+            "packages": [
+                "-wifi-unstuck-wa"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "ubnt_routerstation-pro",
+            "packages": [
+                "-wifi-unstuck-wa"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "ubnt_uk-ultra",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "ubnt_unifiac-lite",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "ubnt_unifiac-lr",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "ubnt_unifiac-mesh",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "ubnt_unifiac-mesh-pro",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "ubnt_unifiac-pro",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "watchguard_ap300",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x",
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "xiaomi_aiot-ac2350",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9984-ct",
+                "ath10k-firmware-qca9984"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "yuncore_a770",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9887-ct",
+                "ath10k-firmware-qca9887"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "yuncore_a782",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "yuncore_xd3200",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "yuncore_xd4200",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca9888-ct",
+                "ath10k-firmware-qca9888"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "zyxel_nbg6616",
+            "packages": [
+                "kmod-ath10k",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "zyxel_nwa1123-ac",
+            "packages": [
+                "kmod-ath10k-smallbuffers",
+                "-kmod-ath10k-ct",
+                "-kmod-ath10k-ct-smallbuffers",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        }
+    ],
+    "version_packages": [
+        "-dnsmasq",
+        "-odhcpd-ipv6only",
+        "-ppp",
+        "-ppp-mod-pppoe"
+    ]
+}
+

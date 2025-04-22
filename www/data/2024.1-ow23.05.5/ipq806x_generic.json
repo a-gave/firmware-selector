@@ -1,0 +1,266 @@
+
+{
+    "default_devices_packages": [
+        "kmod-ath10k",
+        "-kmod-ath10k-ct",
+        "-kmod-ath10k-ct-smallbuffers"
+    ],
+    "excluded_devices": {},
+    "supported_devices": [
+        {
+            "configs": [],
+            "name": "arris_tr4400-v2",
+            "packages": [
+                "-ath10k-firmware-qca9984-ct",
+                "ath10k-firmware-qca9984",
+                "-ath10k-firmware-qca99x0-ct",
+                "ath10k-firmware-qca99x0"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "askey_rt4230w-rev6",
+            "packages": [
+                "-ath10k-firmware-qca9984-ct",
+                "ath10k-firmware-qca9984"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "asrock_g10",
+            "packages": [
+                "-ath10k-firmware-qca99x0-ct",
+                "ath10k-firmware-qca99x0"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "buffalo_wxr-2533dhp",
+            "packages": [
+                "-ath10k-firmware-qca99x0-ct",
+                "ath10k-firmware-qca99x0"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "edgecore_ecw5410",
+            "packages": [
+                "-ath10k-firmware-qca9984-ct",
+                "ath10k-firmware-qca9984"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "extreme_ap3935",
+            "packages": [
+                "-ath10k-firmware-qca99x0-ct",
+                "ath10k-firmware-qca99x0"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "fortinet_fap-421e",
+            "packages": [
+                "-ath10k-firmware-qca99x0-ct",
+                "ath10k-firmware-qca99x0"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "linksys_e8350-v1",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "linksys_ea7500-v1",
+            "packages": [
+                "-ath10k-firmware-qca99x0-ct",
+                "ath10k-firmware-qca99x0"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "linksys_ea8500",
+            "packages": [
+                "-ath10k-firmware-qca99x0-ct",
+                "ath10k-firmware-qca99x0"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "meraki_mr42",
+            "packages": [
+                "-ath10k-firmware-qca9887-ct",
+                "ath10k-firmware-qca9887",
+                "-ath10k-firmware-qca99x0-ct",
+                "ath10k-firmware-qca99x0"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "meraki_mr52",
+            "packages": [
+                "-ath10k-firmware-qca9887-ct",
+                "ath10k-firmware-qca9887",
+                "-ath10k-firmware-qca9984-ct",
+                "ath10k-firmware-qca9984"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "nec_wg2600hp",
+            "packages": [
+                "-ath10k-firmware-qca99x0-ct",
+                "ath10k-firmware-qca99x0"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "nec_wg2600hp3",
+            "packages": [
+                "-ath10k-firmware-qca9984-ct",
+                "ath10k-firmware-qca9984"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "netgear_d7800",
+            "packages": [
+                "-ath10k-firmware-qca99x0-ct",
+                "ath10k-firmware-qca99x0"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "netgear_r7500",
+            "packages": [
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "netgear_r7500v2",
+            "packages": [
+                "-ath10k-firmware-qca99x0-ct",
+                "ath10k-firmware-qca99x0",
+                "-ath10k-firmware-qca988x-ct",
+                "ath10k-firmware-qca988x"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "netgear_r7800",
+            "packages": [
+                "-ath10k-firmware-qca9984-ct",
+                "ath10k-firmware-qca9984"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "netgear_xr450",
+            "packages": [
+                "-ath10k-firmware-qca9984-ct",
+                "ath10k-firmware-qca9984"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "netgear_xr500",
+            "packages": [
+                "-ath10k-firmware-qca9984-ct",
+                "ath10k-firmware-qca9984"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "nokia_ac400i",
+            "packages": [
+                "-ath10k-firmware-qca9984-ct",
+                "ath10k-firmware-qca9984"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "qcom_ipq8064-ap148",
+            "packages": [
+                "-ath10k-firmware-qca99x0-ct",
+                "ath10k-firmware-qca99x0"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "qcom_ipq8064-ap148-legacy",
+            "packages": [
+                "-ath10k-firmware-qca99x0-ct",
+                "ath10k-firmware-qca99x0"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "qcom_ipq8064-ap161",
+            "packages": [
+                "-ath10k-firmware-qca99x0-ct",
+                "ath10k-firmware-qca99x0"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "qcom_ipq8064-db149",
+            "packages": [
+                "-ath10k-firmware-qca99x0-ct",
+                "ath10k-firmware-qca99x0"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_ad7200",
+            "packages": [
+                "-ath10k-firmware-qca99x0-ct",
+                "ath10k-firmware-qca99x0"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_c2600",
+            "packages": [
+                "-ath10k-firmware-qca99x0-ct",
+                "ath10k-firmware-qca99x0"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "tplink_vr2600v",
+            "packages": [
+                "-ath10k-firmware-qca99x0-ct",
+                "ath10k-firmware-qca99x0"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "ubnt_unifi-ac-hd",
+            "packages": [
+                "-ath10k-firmware-qca9984-ct",
+                "ath10k-firmware-qca9984"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "zyxel_nbg6817",
+            "packages": [
+                "-ath10k-firmware-qca9984-ct",
+                "ath10k-firmware-qca9984"
+            ]
+        }
+    ],
+    "version_packages": [
+        "-dnsmasq",
+        "-odhcpd-ipv6only",
+        "-ppp",
+        "-ppp-mod-pppoe"
+    ]
+}
+

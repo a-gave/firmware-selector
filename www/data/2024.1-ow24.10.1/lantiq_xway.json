@@ -1,0 +1,70 @@
+
+{
+    "default_devices_packages": [],
+    "excluded_devices": "",
+    "supported_devices": [
+        {
+            "configs": [],
+            "name": "arcadyan_arv7518pw",
+            "packages": [
+                "wifi-unstuck-wa"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "arcadyan_arv8539pw22",
+            "packages": [
+                "wifi-unstuck-wa"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "avm_fritz7312",
+            "packages": [
+                "wifi-unstuck-wa"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "avm_fritz7320",
+            "packages": [
+                "wifi-unstuck-wa"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "buffalo_wbmr-hp-g300h-a",
+            "packages": [
+                "wifi-unstuck-wa"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "buffalo_wbmr-hp-g300h-b",
+            "packages": [
+                "wifi-unstuck-wa"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "netgear_dgn3500",
+            "packages": [
+                "wifi-unstuck-wa"
+            ]
+        },
+        {
+            "configs": [],
+            "name": "netgear_dgn3500b",
+            "packages": [
+                "wifi-unstuck-wa"
+            ]
+        }
+    ],
+    "version_packages": [
+        "-dnsmasq",
+        "-odhcpd-ipv6only",
+        "-ppp",
+        "-ppp-mod-pppoe"
+    ]
+}
+
