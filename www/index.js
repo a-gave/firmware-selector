@@ -3,6 +3,9 @@
 let current_device = {};
 let current_language = undefined;
 let current_language_json = undefined;
+let current_version = ''
+let current_target = {}
+// let current_flavor = []
 let url_params = undefined;
 const ofs_version = "%GIT_VERSION%";
 
@@ -81,6 +84,7 @@ function buildAsuRequest(request_hash) {
       case "info":
         bs.classList.remove("asu-error");
         bs.classList.add("asu-info");
+        show('#downloads1')
         show(bs);
         break;
       default:
@@ -116,9 +120,21 @@ function buildAsuRequest(request_hash) {
     packages: split($("#asu-packages").value),
     defaults: $("#uci-defaults-content").value,
     version_code: $("#image-code").innerText,
-    version: $("#versions").value,
+    version: config.versions_info[$("#versions").value].openwrt_version,
     diff_packages: true,
     client: "ofs/" + ofs_version,
+    configs: [
+      'CONFIG_VERSION_DIST=LibreMesh',
+      'CONFIG_VERSION_NUMBER='+current_version
+    ],
+    repository_keys: [
+      "RWSnGzyChavSiyQ+vLk3x7F0NqcLa4kKyXCdriThMhO78ldHgxGljM/8"
+    ],
+    repositories: {
+      libremesh: "https://feed.libremesh.org/"+current_version.split('-ow')[0],
+      libremesh_arch_packages: "https://feed.libremesh.org/arch_packages/"+current_version.split('-ow')[0]+"/"+current_device.arch,
+      profile: "https://feed.libremesh.org/profiles"
+    }
   });
   var method = "POST";
 
@@ -153,6 +169,7 @@ function buildAsuRequest(request_hash) {
             mobj["id"] = current_device.id;
             mobj["asu_image_url"] = config.asu_url + "/store/" + mobj.bin_dir;
             updateImages(mobj);
+            show('#downloads1')
           });
           break;
         case 202:
@@ -206,7 +223,7 @@ function setupSelectList(select, items, onselection) {
 
   for (const item of items) {
     const option = document.createElement("OPTION");
-    option.innerText = item;
+    option.innerText = config.versions_info[item]?.version_text || item;
     option.value = item;
     if (item == "latest") {
       // translate the artificial release "latest"
@@ -569,23 +586,31 @@ function updateImages(mobj) {
   $$("#download-table1 *").forEach((e) => e.remove());
   $$("#download-links2 *").forEach((e) => e.remove());
   $$("#download-extras2 *").forEach((e) => e.remove());
-
+  
   if (mobj) {
     if ("asu_image_url" in mobj) {
       // ASU override
       mobj.image_folder = mobj.asu_image_url;
     } else {
-      const base_url = config.image_urls[mobj.version_number];
-      mobj.image_folder = `${base_url}/targets/${mobj.target}`;
+      const flavor = config.versions_info[current_version]?.flavor || ''
+      const base_url = config.image_urls[current_version];
+      const buildonly = config.versions_info[current_version]?.build_only
+      mobj.image_folder = `${base_url}/targets/${mobj.target}${(!buildonly && flavor) && '/'+flavor || ''}`;
     }
 
     const h3 = $("#downloads1 h3");
     if ("build_cmd" in mobj) {
       h3.classList.remove("tr-downloads");
       h3.classList.add("tr-custom-downloads");
+      show('#downloads1')
     } else {
       h3.classList.remove("tr-custom-downloads");
       h3.classList.add("tr-downloads");
+      if (config.versions_info[current_version]?.build_only) {
+        hide("#downloads1");
+      } else {
+        show('#downloads1')
+      }
     }
 
     // update title translation
@@ -594,7 +619,7 @@ function updateImages(mobj) {
     // fill out build info
     setValue("#image-model", getModelTitles(mobj.titles).join(" / "));
     setValue("#image-target", mobj.target);
-    setValue("#image-version", mobj.version_number);
+    setValue("#image-version", current_version);
     setValue("#image-code", mobj.version_code);
     setValue("#image-date", formatDate(mobj.build_at));
     setValue("#image-folder", mobj.image_folder);
@@ -612,7 +637,7 @@ function updateImages(mobj) {
       "#image-link",
       document.location.href.split("?")[0] +
         "?version=" +
-        encodeURIComponent(mobj.version_number) +
+        encodeURIComponent(current_version) +
         "&target=" +
         encodeURIComponent(mobj.target) +
         "&id=" +
@@ -661,11 +686,32 @@ function updateImages(mobj) {
       $("#asu").open = false;
       hide("#asu-log");
       hide("#asu-buildstatus");
+
+      let libremesh_version_packages = (current_target.version_packages || [])
+      let device_packages_add = current_target?.supported_devices?.filter(i => i.name === mobj.id)?.[0]?.packages || []
+      let device_packages = (current_target.default_devices_packages || []).concat(device_packages_add)
+      let libremesh_packages = current_flavor
+      let lime_packages = libremesh_version_packages
+        .concat(device_packages)
+        .concat(libremesh_packages)
+
+
+      console.log(lime_packages)
+      console.log(current_target)
+
       // Pre-select ASU packages.
       $("#asu-packages").value = mobj.default_packages
         .concat(mobj.device_packages)
         .concat(config.asu_extra_packages || [])
+        .concat(lime_packages)
         .join(" ");
+
+        if ($("#libremesh-version-packages")) {
+          $("#libremesh-version-packages").innerHTML = libremesh_version_packages.join(" ") || '' }
+        if ($("#libremesh-device-packages")) {
+          $("#libremesh-device-packages").innerHTML = device_packages.join(" ") || '<i>-</i>' }
+        if ($("#libremesh-default-packages")) {
+          $("#libremesh-default-packages").innerHTML = libremesh_packages.join(" ") || '' }
     }
 
     translate();
@@ -677,7 +723,7 @@ function updateImages(mobj) {
         null,
         document.location.href.split("?")[0] +
           "?version=" +
-          encodeURIComponent(mobj.version_number) +
+          encodeURIComponent(current_version) +
           "&target=" +
           encodeURIComponent(mobj.target) +
           "&id=" +
@@ -694,6 +740,12 @@ function updateImages(mobj) {
       hide("#notfound");
     }
     hide("#images");
+  }
+
+  if (config.versions_info[current_version]?.allow_build == false ) {
+    hide("#asu")
+  } else {
+    show("#asu")
   }
 }
 
@@ -712,10 +764,25 @@ function setModel(overview, target, id) {
 }
 
 function changeModel(version, overview, title) {
+  hide("#downloads1");
   const entry = overview.profiles[title];
-  const base_url = config.image_urls[version];
+  const base_url = config.profile_urls[version];
+
+  current_version = version
+  const libremesh_version = config.versions_info[current_version].libremesh_version
+  const flavorName = config.versions_info[version]?.flavor || ''
+  const buildOnly = config.versions_info[current_version]?.build_only
+  const allowBuild = config.versions_info[current_version]?.allow_build ?? true
+  const flavor = (!buildOnly && flavorName !== '') && '/'+flavorName || ''
+
+  allowBuild && fetch('/data/'+libremesh_version+'/'+entry.target.replace('/', '_')+'.json')
+    .then((obj) => { return obj.json()})
+    .then(f => { current_target = f})
+
+  current_flavor = config.flavors?.[flavorName]
+
   if (entry) {
-    fetch(`${base_url}/targets/${entry.target}/profiles.json`, {
+    fetch(`${base_url}/targets/${entry.target}${flavor}/profiles.json`, {
       cache: "no-cache",
     })
       .then((obj) => {
@@ -727,6 +794,10 @@ function changeModel(version, overview, title) {
       })
       .then((mobj) => {
         mobj["id"] = entry.id;
+        if (! mobj["profiles"][entry.id]?.["images"]) {
+          // libremesh device not built
+          return 
+        }
         mobj["images"] = mobj["profiles"][entry.id]["images"];
         mobj["titles"] = mobj["profiles"][entry.id]["titles"];
         mobj["device_packages"] = mobj["profiles"][entry.id]["device_packages"];
@@ -735,6 +806,7 @@ function changeModel(version, overview, title) {
           version: version,
           id: entry.id,
           target: entry.target,
+          arch: mobj["arch_packages"]
         };
       })
       .catch((err) => showAlert(err.message));
@@ -805,7 +877,7 @@ function insertSnapshotVersions(versions) {
   versions.push("SNAPSHOT");
 }
 
-async function init() {
+function init() {
   url_params = new URLSearchParams(window.location.search);
 
   $("#ofs-version").innerText = ofs_version;
@@ -815,7 +887,7 @@ async function init() {
     show("#asu");
   }
 
-  let upstream_config = await fetch(config.image_url + "/.versions.json", {
+  let upstream_config = fetch(config.image_url + "/.versions.json", {
     cache: "no-cache",
   })
     .then((obj) => {
@@ -865,6 +937,7 @@ async function init() {
   }
   config.overview_urls = {};
   config.image_urls = {};
+  config.profile_urls = {};
 
   const overview_url = config.image_url;
   const image_url = upstream_config.image_url_override || config.image_url;
@@ -874,8 +947,20 @@ async function init() {
       config.overview_urls[version] = `${overview_url}/snapshots/`;
       config.image_urls[version] = `${image_url}/snapshots/`;
     } else {
-      config.overview_urls[version] = `${overview_url}/releases/${version}`;
-      config.image_urls[version] = `${image_url}/releases/${version}`;
+      const openwrt_version = config.versions_info[version]?.openwrt_version || ''
+      const openwrt_image_url = upstream_config.image_url_override || config.openwrt_image_url;
+      config.profile_urls[version] = `${openwrt_image_url}/releases/${openwrt_version}`;
+      config.overview_urls[version] = `${config.openwrt_image_url}/releases/${openwrt_version}`;
+
+      if (config.versions_info[version]?.build_only) {
+        config.image_urls[version] = `${openwrt_image_url}/releases/${openwrt_version}`;
+        config.profile_urls[version] = `${openwrt_image_url}/releases/${openwrt_version}`;
+      } else {
+        const libremesh_version = config.versions_info[version]?.libremesh_version || version
+        config.image_urls[version] = `${image_url}/releases/${libremesh_version}`;
+        config.profile_urls[version] = `${image_url}/releases/${libremesh_version}`;
+
+      }
     }
   }
 
@@ -883,6 +968,11 @@ async function init() {
 
   setupSelectList($("#versions"), config.versions, (version) => {
     // A new version was selected
+    if (config.versions_info[version]?.build_only) {
+      const openwrt_version = config.versions_info[version]?.openwrt_version
+      const openwrt_image_url = upstream_config.image_url_override || config.openwrt_image_url;
+      config.overview_urls[version] = `${config.openwrt_image_url}/releases/${openwrt_version}`;
+    }
     let overview_url = `${config.overview_urls[version]}/.overview.json`;
     fetch(overview_url, { cache: "no-cache" })
       .then((obj) => {
