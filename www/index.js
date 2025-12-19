@@ -724,7 +724,11 @@ function updateImages(version, mobj) {
         // console.log(mobj.default_packages.concat(mobj.device_packages))
         let owrt_packages = mobj.default_packages.concat(mobj.device_packages)
 
-        if (owrt_packages.includes("kmod-ath9k") || owrt_packages.includes("kmod-ath10k-ct")) {
+        if (owrt_packages.includes("kmod-ath9k") 
+            || owrt_packages.includes("kmod-ath10k-ct")
+            || owrt_packages.includes("-kmod-ath10k-ct") 
+            || owrt_packages.includes("kmod-ath10k-ct-smallbuffers")
+            || owrt_packages.includes("-kmod-ath10k-ct-smallbuffers")) {
           device_packages = packages_changes(owrt_packages)
         }
 
