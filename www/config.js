@@ -14,6 +14,7 @@ var config = {
     "master-ow24.10.2",
     "master-ow24.10.3",
     "master-ow24.10.4",
+    "master-ow24.10.5",
     "master-ow23.05-SNAPSHOT",
     "master-ow24.10-SNAPSHOT",
     "master-SNAPSHOT"
@@ -49,6 +50,12 @@ var config = {
     "master-ow24.10.4": {
       build_only: true, 
       openwrt_version: "24.10.4", 
+      libremesh_ref: "master",
+      flavor: "default"
+    },
+    "master-ow24.10.5": {
+      build_only: true, 
+      openwrt_version: "24.10.5", 
       libremesh_ref: "master",
       flavor: "default"
     },
