@@ -37,7 +37,7 @@ jobs:
           sed -i "s;%GIT_VERSION%;$(git describe --tags);" index.js
           sed -i 's;image_url: "../misc",;image_url: "https://downloads.openwrt.org",;' config.js
           sed -i "s;  //show_snapshots;  show_snapshots;" config.js
-          sed -i "s;  versions;  //  versions;" config.js
+          # sed -i "s;  versions;  //  versions;" config.js
 
       - name: Upload using rsync
         run: |

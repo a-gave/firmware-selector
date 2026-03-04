@@ -5,9 +5,9 @@ def test_spa(simplehttpserver):
         browser = p.firefox.launch()
         page = browser.new_page()
         page.goto("http://localhost:8000/www/")
-        assert "OpenWrt Firmware Selector" in page.title()
+        assert "LibreMesh Firmware Selector" in page.title()
 
-        assert page.locator("#versions").select_option("19.07.10")[0] == "19.07.10"
+        assert page.locator("#versions").select_option("24.10.5")[0] == "24.10.5"
 
         page.fill("#models", "a7 v5")
         models = page.inner_text("#models-autocomplete-list")

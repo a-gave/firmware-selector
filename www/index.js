@@ -70,6 +70,8 @@ function buildAsuRequest(request_hash) {
   $$("#download-extras2 *").forEach((e) => e.remove());
   hide("#asu-log");
 
+  show("#downloads1");
+  show("#downloads2");
   function showStatus(message, loading, type) {
     const bs = $("#asu-buildstatus");
     switch (type) {
@@ -108,17 +110,68 @@ function buildAsuRequest(request_hash) {
     return;
   }
 
-  var request_url = `${config.asu_url}/api/v1/build`;
+  let version = $("#versions").value;
+  let asu_url = config.asu_url;
+  if (version == "SNAPSHOT" || version.startsWith("25")) {
+    asu_url = config.asu_fallback_url;
+  }
+
+  var request_url = `${asu_url}/api/v1/build`;
+
+  let version_path = config.feed_url + "/snapshots/";
+  let packages = split($("#asu-packages").value).concat(
+    split($("#lime-packages").value)
+  );
+
+  let lime_feed = config.lime.feed_url + "/";
+  let lime_ref = $("#ref-select").value + "/";
+  let arch = current_device.arch;
+  let target = current_device.target;
+  let branch = "openwrt-main/";
+  let pkg_ref = "/packages.adb";
+  let repo_keys = [config.lime.pubkey_apk];
+
+  if (version != "SNAPSHOT") {
+    branch = "openwrt-" + version.substring(0, 5) + "/";
+    version_path = config.feed_url + "/releases/" + version + "/";
+    if (version.substring(0, 2) < 25) {
+      repo_keys = [config.lime.pubkey_opkg];
+      pkg_ref = "";
+    }
+  }
+
+  // kernel modules
+  let k = current_device.linux_kernel;
+  let kmods = k.version + "-" + k.release + "-" + k.vermagic;
+
+  let repos = {
+    openwrt_core: version_path + "targets/" + target + "/packages",
+    openwrt_base: version_path + "packages/" + arch + "/base",
+    openwrt_kmods: version_path + "targets/" + target + "/kmods/" + kmods,
+    openwrt_luci: version_path + "packages/" + arch + "/luci",
+    openwrt_packages: version_path + "packages/" + arch + "/packages",
+    openwrt_routing: version_path + "packages/" + arch + "/routing",
+    openwrt_telephony: version_path + "packages/" + arch + "/telephony",
+    libremesh: lime_feed + lime_ref + branch + "x86_64",
+    libremesh_arch_packages: lime_feed + lime_ref + branch + arch,
+    profiles: lime_feed + "profiles/" + branch + "x86_64",
+  };
+
+  Object.entries(repos).forEach((repo) => {
+    repos[repo[0]] = repo[1] + pkg_ref;
+  });
 
   var body = JSON.stringify({
     profile: current_device.id,
-    target: current_device.target,
-    packages: split($("#asu-packages").value),
+    target: target,
+    packages: packages,
     defaults: $("#uci-defaults-content").value,
     version_code: $("#image-code").innerText,
     version: $("#versions").value,
     diff_packages: true,
     client: "ofs/" + ofs_version,
+    repositories: repos,
+    repository_keys: repo_keys,
   });
   var method = "POST";
 
@@ -151,7 +204,7 @@ function buildAsuRequest(request_hash) {
             }
             showStatus("tr-build-successful", false, "info");
             mobj["id"] = current_device.id;
-            mobj["asu_image_url"] = config.asu_url + "/store/" + mobj.bin_dir;
+            mobj["asu_image_url"] = asu_url + "/store/" + mobj.bin_dir;
             updateImages(mobj.version_number, mobj);
           });
           break;
@@ -664,6 +717,16 @@ function updateImages(version, mobj) {
         .concat(mobj.device_packages)
         .concat(config.asu_extra_packages || [])
         .join(" ");
+
+      let lime_device_packages = packages_changes(
+        mobj.default_packages.concat(mobj.device_packages)
+      );
+
+      $("#lime-packages").value = lime_default_packages
+        .concat(lime_generic_save_space)
+        .concat(lime_device_packages)
+        .concat(flavors.default)
+        .join(" ");
     }
 
     translate();
@@ -710,6 +773,8 @@ function setModel(overview, target, id) {
 }
 
 function changeModel(version, overview, title) {
+  hide("#downloads1");
+  hide("#downloads2");
   const entry = overview.profiles[title];
   const base_url = config.image_urls[version];
   if (entry) {
@@ -733,6 +798,8 @@ function changeModel(version, overview, title) {
           version: version,
           id: entry.id,
           target: entry.target,
+          arch: mobj["arch_packages"],
+          linux_kernel: mobj["linux_kernel"],
         };
       })
       .catch((err) => showAlert(err.message));
@@ -955,4 +1022,172 @@ async function init() {
   updateImages();
 
   initTranslation();
+
+  initFlavor();
+  initBranches();
+}
+
+// version packages
+var lime_default_packages = ["-dnsmasq", "-odhcpd-ipv6only"];
+var lime_generic_save_space = ["-ppp", "-ppp-mod-pppoe"];
+
+var flavors = {
+  default: [
+    "babeld-auto-gw-mode",
+    "batctl-default",
+    "check-date-http",
+    "lime-app",
+    "lime-debug",
+    "lime-docs",
+    "lime-docs-minimal",
+    "lime-hwd-ground-routing",
+    "lime-hwd-openwrt-wan",
+    "lime-proto-anygw",
+    "lime-proto-babeld",
+    "lime-proto-batadv",
+    "shared-state",
+    "shared-state-babeld_hosts",
+    "shared-state-bat_hosts",
+    "shared-state-nodes_and_links",
+  ],
+  mini: [
+    "babeld-auto-gw-mode",
+    "lime-docs-minimal",
+    "lime-hwd-openwrt-wan",
+    "lime-proto-anygw",
+    "lime-proto-babeld",
+    "lime-proto-batadv",
+    "shared-state",
+    "shared-state-babeld_hosts",
+  ],
+  "babeld-only": [
+    "babeld-auto-gw-mode",
+    "lime-docs-minimal",
+    "lime-hwd-openwrt-wan",
+    "lime-proto-babeld",
+    "shared-state",
+    "shared-state-babeld_hosts",
+  ],
+};
+
+var current_flavor = flavors.default;
+
+let packages_changes_list = [
+  {
+    source: "kmod-ath9k",
+    action: "replace",
+    packages: ["wifi-unstuck-wa"],
+  },
+  {
+    source: "-kmod-ath9k",
+    action: "replace",
+    packages: ["-wifi-unstuck-wa"],
+  },
+  {
+    source: "kmod-ath10k-ct-smallbuffers",
+    action: "replace",
+    packages: [
+      "-kmod-ath10k",
+      "-kmod-ath10k-ct",
+      "-kmod-ath10k-ct-smallbuffers",
+      "kmod-ath10k-smallbuffers",
+    ],
+  },
+  {
+    source: "kmod-ath10k-ct",
+    action: "replace",
+    packages: [
+      "-kmod-ath10k-ct",
+      "-kmod-ath10k-ct-smallbuffers",
+      "kmod-ath10k",
+    ],
+  },
+  {
+    source: "-kmod-ath10k-ct",
+    action: "replace",
+    packages: ["-kmod-ath10k"],
+  },
+  {
+    source: /^ath10k-firmware-qca(.*)-ct(.*)$/,
+    action: "regexp",
+    packages: [
+      "-ath10k-firmware-qcaREPLACE-ctKEEP",
+      "ath10k-firmware-qcaREPLACE",
+    ],
+  },
+  {
+    source: /^-ath10k-firmware-qca(.*)-ct(.*)$/,
+    action: "regexp",
+    packages: ["ath10k-firmware-qcaREPLACE"],
+  },
+];
+
+function packages_changes(packages) {
+  let packages_list = [];
+
+  packages.forEach((package) => {
+    packages_changes_list.forEach((pc) => {
+      if (pc.action == "replace") {
+        if (package == pc.source) {
+          pc.packages.forEach((change) => {
+            if (!packages_list.includes(change)) {
+              packages_list.push(change);
+            }
+          });
+        }
+      }
+      if (pc.action == "regexp") {
+        let matches = package.match(pc.source);
+        if (matches?.length) {
+          pc.packages.forEach((replacement) => {
+            let change = replacement
+              .replace("REPLACE", matches[1])
+              .replace("KEEP", matches[2]);
+            if (!packages_list.includes(change)) {
+              packages_list.push(change);
+            }
+          });
+        }
+      }
+    });
+  });
+
+  return packages_list;
+}
+
+function initFlavor() {
+  let select = $("#flavor-select");
+
+  select.onchange = function () {
+    const option = select.options[select.selectedIndex];
+
+    let lime_packages = split($("#lime-packages").value);
+    if (lime_packages == "") {
+      return;
+    }
+
+    // remove previous flavor
+    let default_device_packages = lime_packages.filter(
+      (v) => !current_flavor.includes(v)
+    );
+    current_flavor = flavors[option.value];
+
+    $("#lime-packages").value = default_device_packages
+      .concat(current_flavor)
+      .join(" ");
+  };
+
+  // trigger translation
+  select.onchange();
+}
+
+function initBranches() {
+  let select = $("#ref-select");
+
+  config.lime.branches.forEach((i) => {
+    var opt = document.createElement("option");
+    opt.value = i;
+    opt.innerHTML = i;
+    select.appendChild(opt);
+  });
 }

@@ -4,8 +4,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>OpenWrt Firmware Selector</title>
-    <link rel="icon" href="favicon.ico" />
+    <title>LibreMesh Firmware Selector</title>
+    <link rel="icon" href="https://libremesh.org/favicon.ico" />
     <link rel="stylesheet" href="index.css" />
     <script src="config.js"></script>
     <script src="index.js"></script>
@@ -14,8 +14,8 @@
     <!-- header across the whole page -->
     <header>
       <div>
-        <a href="https://openwrt.org">
-          <img src="logo.svg" width="180" alt="Logo" />
+        <a href="https://libremesh.org">
+          <img src="/libremesh_logo.svg" width="180" alt="Logo" />
         </a>
         <div style="flex-grow: 1"></div>
         <div>
@@ -79,10 +79,16 @@
 
     <div class="container">
       <div>
-        <h2 class="tr-load">Download OpenWrt Firmware for your Device</h2>
+        <h2 class="tr-libremesh-load">
+          Build LibreMesh firmware for your Device
+        </h2>
         <p class="tr-message">
           Type the name or model of your device, then select a stable build or
           the nightly "snapshot" build.
+        </p>
+        <p>
+          Download old precompiled versions from
+          <a href="https://firmware-libremesh.antennine.org/releases/">here</a>.
         </p>
 
         <!-- Model name and Build dropdown -->
@@ -158,10 +164,43 @@
                   </div>
                 </div>
                 <div>
-                  <h4 class="tr-packages">Installed Packages</h4>
+                  <h4 class="tr-openwrt-packages">OpenWrt Packages</h4>
                   <textarea
                     rows="10"
                     id="asu-packages"
+                    autocomplete="off"
+                    spellcheck="false"
+                    autocapitalize="off"
+                  ></textarea>
+                </div>
+                <div>
+                  <h4 class="tr-libremesh-packages">LibreMesh Packages</h4>
+                  <div>
+                    <div style="display: flex">
+                      <span style="padding: 1em; min-width: 15em"
+                        >Flavor:
+                      </span>
+                      <select id="flavor-select">
+                        <option value="default">
+                          default (babeld, batman-adv, anygw, lime-app,
+                          shared-state-async)
+                        </option>
+                        <option value="mini">
+                          mini (babeld, batman-adv, anygw, shared-state)
+                        </option>
+                        <option value="babeld-only">babeld-only</option>
+                      </select>
+                    </div>
+                    <div style="display: flex">
+                      <span style="padding: 1em; min-width: 15em"
+                        >Feed Branch:
+                      </span>
+                      <select id="ref-select"></select>
+                    </div>
+                  </div>
+                  <textarea
+                    rows="10"
+                    id="lime-packages"
                     autocomplete="off"
                     spellcheck="false"
                     autocapitalize="off"
@@ -206,12 +245,12 @@
         </div>
 
         <div id="footer">
-          <span
+          <!-- <span
             ><a href="https://downloads.openwrt.org" class="tr-server-link"
               >All Downloads</a
             ></span
           >
-          |
+          | -->
           <span
             ><a
               href="https://forum.openwrt.org/t/the-openwrt-firmware-selector/81721"
