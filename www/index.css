@@ -353,6 +353,7 @@ header > div {
   overflow: scroll;
 }
 
+#lime-packages,
 #asu-packages,
 #uci-defaults-content,
 #uci-defaults-group {
@@ -368,6 +369,7 @@ header > div {
 /* light mode */
 header {
   background-color: #00a3e1;
+  background-color: #fff;
 }
 
 body {
@@ -409,6 +411,7 @@ body {
 @media (prefers-color-scheme: dark) {
   header {
     background-color: #0080b3;
+    background-color: #252528;
   }
 
   body {
@@ -468,4 +471,17 @@ body {
   width: 100%;
   background-color: red;
   text-align: center;
+}
+
+#flavor-select,
+#ref-select {
+  width: 100%;
+  padding: 1em;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+
+#flavor-select > *,
+#ref-select > * {
+  padding: 1em;
 }

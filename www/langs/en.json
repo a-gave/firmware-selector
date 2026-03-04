@@ -44,5 +44,6 @@
     "tr-validate-manifest": "Validate manifest",
     "tr-container-setup": "Setup container",
     "tr-packages": "Installed Packages",
-    "tr-defaults": "Script to run on first boot (uci-defaults)"
+    "tr-defaults": "Script to run on first boot (uci-defaults)",
+    "tr-libremesh-load": "Build LibreMesh firmware for your device"
 }
