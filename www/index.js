@@ -901,6 +901,14 @@ async function init() {
         versions.push(obj.upcoming_version);
       }
 
+      if (!config.versions.includes(obj.oldstable_version)) {
+        config.versions.push(obj.oldstable_version);
+      }
+
+      if (!config.versions.includes(obj.stable_version)) {
+        config.versions.push(obj.stable_version);
+      }
+
       if (config.show_snapshots) {
         insertSnapshotVersions(versions);
       }
@@ -924,6 +932,8 @@ async function init() {
   if (!config.default_version) {
     config.default_version = upstream_config.default_version;
   }
+
+
   config.overview_urls = {};
   config.image_urls = {};
 
