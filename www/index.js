@@ -912,6 +912,14 @@ async function init() {
         insertSnapshotVersions(versions);
       }
 
+      if (!config.versions.includes(obj.oldstable_version)) {
+        config.versions.push(obj.oldstable_version);
+      }
+
+      if (!config.versions.includes(obj.stable_version)) {
+        config.versions.push(obj.stable_version);
+      }
+
       return {
         versions: versions,
         image_url_override: obj.image_url_override,
