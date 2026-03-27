@@ -8,8 +8,11 @@ var config = {
   versions: [
     "SNAPSHOT",
     "25.12-SNAPSHOT",
+    "25.12.2",
+    "25.12.1",
     "25.12.0",
     "24.10-SNAPSHOT",
+    "24.10.6",
     "24.10.5",
     "23.05-SNAPSHOT",
     "23.05.6",
