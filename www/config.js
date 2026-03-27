@@ -35,12 +35,12 @@ var config = {
   // Attended Sysupgrade Server support (optional)
   // asu_url: "https://sysupgrade.openwrt.org",
   // asu_extra_packages: ["luci", "luci-app-attendedsysupgrade"],
-  asu_url: "https://sysupgrade.antennine.org",
+  asu_url: "https://sysupgrade-01.antennine.org",
   asu_fallback_url: "https://sysupgrade-01.antennine.org",
   asu_extra_packages: [""],
 
   lime: {
-    feed_url: "https://feed.libremesh.org",
+    feed_url: "https://a-gave.github.io/lime-feed",
     pubkey_apk:
       "-----BEGIN PUBLIC KEY-----\n\
 MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEdFJZ2qVti49Ol8LJZYuxgOCLowBS\n\
@@ -48,7 +48,7 @@ MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEdFJZ2qVti49Ol8LJZYuxgOCLowBS\n\
 -----END PUBLIC KEY-----",
     pubkey_opkg: "RWSnGzyChavSiyQ+vLk3x7F0NqcLa4kKyXCdriThMhO78ldHgxGljM/8",
     branches: [
-      // "main",
+      "main",
       "master",
       "dev",
     ],
